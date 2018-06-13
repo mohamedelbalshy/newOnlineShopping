@@ -1,0 +1,12 @@
+<div class="container">
+<div class="row">
+            
+    <app-product-item 
+  *ngFor="let product of ProductsHome | filter: searchText; let i = index"
+  [product] = "product"
+  [index]="i"
+  >
+
+    </app-product-item>
+    </div>
+    </div>
